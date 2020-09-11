@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>building construction</title>
+	<script src="jquery.js"></script>
+	<style type="text/css">
+		body {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.left {
+			width: 85%;
+			height: 150px;
+			background-color:white;
+			float: left;
+			color: blue;
+			font-size: 95px;
+			text-align: center;
+		}
+		.right {
+			background-color:white;
+			width: 15%;
+			height: 135px;
+			float: left;
+			padding-top: 15px;
+		}
+
+		.btn {
+			font-size: 110px;
+			padding:20px;
+			color: black;
+			cursor: pointer;
+		}
+		#check {
+			display: none;
+		}
+
+		.ka {
+			position: fixed;
+			width: 100%;
+		}
+
+		ul {
+				position: fixed;
+				width: 82%;
+				height:70%;
+				background-color: rgba(0,0,0,1);
+				top: 160px;
+				left: -105%;
+				transition: all 2s;
+			}
+		#check:checked ~ ul{
+				left: 0;
+			}
+			ul {
+				list-style: none;
+			}
+
+			ul li a {
+				text-decoration: none;
+				color: white;
+			}
+			ul li {
+				text-align: center;
+			}
+			ul li:hover {
+				background-color: red;
+			}
+
+			/*css of bottom nav bar*/
+
+			nav {
+			width: 1000px;
+			height: 110px;
+			background-color:#e6e6e6;
+			position: fixed;
+			bottom: 10px;
+			display: flex;
+		}
+
+		.Home-btn {
+			font-size: 110px;
+			color: black;
+			padding-top: 4px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			cursor: pointer;
+		}
+		.Home-btn:hover {
+			background-color: rgba(0,0,0,0.7);
+		}
+
+		.Whatsapp-btn {
+			font-size: 110px;
+			padding-top: 2px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			color: green;
+			cursor: pointer;
+		}
+		.Whatsapp-btn:hover {
+			background-color: lime;
+		}
+
+		.instagram-btn {
+			font-size: 110px;
+			padding-top: 4px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			color:#ff1a8c;
+			cursor: pointer;
+		}
+		.instagram-btn:hover {
+			background-color: pink;
+		}
+
+		.facebook-btn {
+			font-size: 100px;
+			padding-top: 2px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			color: blue;
+			cursor: pointer;
+		}
+		.facebook-btn:hover {
+			background-color: white;
+		}
+
+		.phone-btn {
+			font-size: 100px;
+			padding-top: 4px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			color: red;
+			cursor: pointer;
+		}
+
+		.phone-btn:hover {
+			background-color:rgba(0,0,0,0.7);
+		}
+
+		.mail-btn {
+			font-size: 90px;
+			padding-top: 4px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			color: silver;
+			cursor: pointer;
+			background-color: red;
+		}
+
+		.mail-btn:hover {
+			background-color:rgba(0,0,0,0.7);
+		}
+
+		/*css end of bottom nav bar*/
+
+		.first-box {
+			background-image:url();
+			width: 100%;
+			background-size: cover;
+			height: 855px;
+			border-radius: 50px;
+		}
+
+		.second-box {
+			background-image: url();
+			width: 100%;
+			height: 890px;
+			border-radius: 50px;
+			background-size: cover;
+		}
+
+		.third-box {
+			background-image: url();
+			width: 100%;
+			height: 890px;
+			border-radius: 50px;
+			background-size: cover;
+		}
+
+		.fourth-box {
+			background-image: url();
+			width: 100%;
+			height: 890px;
+			border-radius: 50px;
+			background-size: cover;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+	<div class="ka">
+		<div class="left"><sup style="text-shadow: 15px 2px 15px black;"><b>Building</b></sup><sub style="text-shadow: 15px 2px 15px black;"><b>Construction</b></sub></div>
+			<div class="right">
+				<input type="checkbox" id="check">
+					<label for="check" class="btn">
+						<span class="fas fa-bars"></span>
+					</label>
+				<ul>
+					<h1 style="font-size: 100px; color: blue; text-align: center;
+							text-shadow: 10px 2px 5px white;">Menu bar</h1>
+					<li><a href="#"><h1 style="font-size: 60px;"><label class="fas fa-home">   	Home</label></h1></a></li><hr>
+					<li><a href="#"><h1 style="font-size: 60px;"><label class="far fa-hand-point-right">    About-us</label></h1></a></li><hr>
+					<li><a href="#"><h1 style="font-size: 60px;">Services</h1></a></li><hr>
+					<li><a href="connect-us.html"><h1 style="font-size: 60px;"><label class="	far fa-handshake">    Connect-us</label></h1></a></li><hr>
+					</ul>
+			</div>
+		</div>
+
+		<!--middle content-->
+		<div style="background-color:#f2f2f2; height:1030px; width:100%; padding-top:250px;" id="home">
+			<div style="height:900px; width: 85%; margin: 0px auto; border-radius: 50px; border: 5px solid black; box-shadow: 20px 40px 20px black;">
+
+				<div class="first-box">
+					
+				</div>
+
+			</div>
+		</div>
+
+		<div style="background-color:white; height:1040px; width:100%; padding-top:110px;">
+			<div style="height:900px; width: 85%; margin: 0px auto; border-radius: 50px; border: 5px solid black; box-shadow: 20px 40px 20px black;">
+
+				<div class="second-box">
+
+				</div>
+			</div>
+		</div>
+
+		<div style="background-color:#f2f2f2; height:1020px; width:100%; padding-top:110px;">
+			<div style="height:900px; width: 85%; margin: 0px auto; border-radius: 50px; border: 5px solid black; box-shadow: 20px 40px 20px black;">
+
+				<div class="third-box">
+
+				</div>
+
+			</div>
+		</div>
+
+		<div style="background-color:white; height:1820px; width:100%; padding-top:110px;">
+			<div style="height:900px; width: 85%; margin: 0px auto; border-radius: 50px; border: 5px solid black; box-shadow: 20px 40px 20px black;">
+
+				<div class="third-box">
+
+				</div>
+			</div><br><br><br><br><br><br>
+			<div style="background-color:#f2f2f2; width: 96%; height: 670px; margin: 0px auto;">
+				<div style="background-image:radial-gradient(yellow, red); width: 90%; margin: 0px auto; height: 600px; border:10px solid white; box-shadow: 20px 30px 20px"><br>
+					<h1 style="font-size: 60px; text-align: center;">About Of Web-developer</h1>
+					<fieldset style="width: 90%; margin: 0px auto;">
+						<legend><h1 style="font-size: 40px;">I Am Kanha Patil</h1></legend>
+						<p style="font-size: 35px; color: blue; text-align: center;">#################</p>
+							<p style="font-size: 35px; color: blue; text-align: center;">#################</p>
+								<p style="font-size: 35px; color: blue; text-align: center;">#################</p>
+									<p style="font-size: 35px; color: blue; text-align: center;">#################</p>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+
+
+			
+
+		<!--end of middle content-->
+
+		<!--bottom nav bar-->
+		<nav>
+		<a href="#home">
+			<label class="Home-btn">
+				<span class="fas fa-home"></span>
+			</label>
+		</a>
+		<a href="https://Whatsapp.com/dl/">
+			<label class="Whatsapp-btn">
+				<span class="fab fa-whatsapp"></span>
+			</label>
+		</a>
+		<a href="https://www.instagram.com/invites/contact/?i=9l8qt43q2rly&utm_content=5rjfz3s">
+			<label class="instagram-btn">
+				<span class="fab fa-instagram"></span>
+			</label>
+		</a>
+		<a href="">
+			<label class="facebook-btn">
+				<span class="fab fa-facebook-f"></span>
+			</label>
+		</a>
+		<a href="tel:9754991557">
+			<label class="phone-btn">
+				<span class="fa fa-phone"></span>
+			</label>
+		</a>
+		<a href="mailto:kanhap569@gmail.com">
+			<label class="mail-btn">
+				<span class="fa fa-envelope"></span>
+			</label>
+		</a>
+	</nav>
+	
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
